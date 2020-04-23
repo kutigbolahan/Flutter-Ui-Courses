@@ -1,10 +1,11 @@
+import 'package:courses/secondpage.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white70,
+      backgroundColor: Colors.white,
       body: Padding(
         padding: const EdgeInsets.only(top: 50.0, right: 28, left: 28),
         child: Column(
@@ -66,8 +67,8 @@ class MyHomePage extends StatelessWidget {
         elevation: 0.0,
         items: [
           BottomNavigationBarItem(
-            title: Text('Home',style: TextStyle(color: Colors.grey),),
-            icon: Icon(Icons.home,color: Colors.grey),
+            title: Text('Home',style: TextStyle(color: Colors.blue[700]),),
+            icon: Icon(Icons.home,color: Colors.blue[700]),
           
           ),
           BottomNavigationBarItem(
@@ -77,7 +78,11 @@ class MyHomePage extends StatelessWidget {
           ),
           BottomNavigationBarItem(
             title: Text('Profile',style: TextStyle(color: Colors.grey),),
-            icon: Icon(Icons.account_circle),
+            icon: IconButton(icon:Icon(Icons.account_circle),
+            onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ProfilePage()));
+            },
+            ),
           
           ),
         ]
