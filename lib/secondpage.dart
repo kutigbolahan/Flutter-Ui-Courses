@@ -21,7 +21,7 @@ class ProfilePage extends StatelessWidget {
               ),
              // SizedBox(height: 5),
               CircleAvatar(
-                backgroundImage: AssetImage('assets/images/medal.png'),
+                backgroundImage: AssetImage('assets/images/man.png'),
        // backgroundColor: Colors.yellow,
         //foregroundColor: Colors.white,
         radius: 50,
