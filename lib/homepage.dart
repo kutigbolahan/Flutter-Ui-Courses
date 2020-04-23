@@ -39,6 +39,7 @@ class MyHomePage extends StatelessWidget {
               color: Colors.indigo[900],
               fontSize: 20,
               ),),
+              SizedBox(height: 5),
             Text('Choose a Course from courses tab or use the button below to start ',
              style: TextStyle(
               color: Colors.indigo[500],
@@ -46,9 +47,41 @@ class MyHomePage extends StatelessWidget {
               ),
             textAlign: TextAlign.center,
             ),
+            SizedBox(height: 30,),
+            Container(
+              height: 35,
+              width: 35,
+              decoration: BoxDecoration(
+                
+                borderRadius: BorderRadius.circular(6),
+                color: Colors.blue[700]
+              ),
+              child: Icon(Icons.add, color: Colors.white,),
+            )
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white,
+        elevation: 0.0,
+        items: [
+          BottomNavigationBarItem(
+            title: Text('Home',style: TextStyle(color: Colors.grey),),
+            icon: Icon(Icons.home,color: Colors.grey),
+          
+          ),
+          BottomNavigationBarItem(
+            title: Text('Courses',style: TextStyle(color: Colors.blue[700]),),
+            icon: Icon(Icons.book,color: Colors.blue[700]),
+          
+          ),
+          BottomNavigationBarItem(
+            title: Text('Profile',style: TextStyle(color: Colors.grey),),
+            icon: Icon(Icons.account_circle),
+          
+          ),
+        ]
+        ),
     );
   }
 }
