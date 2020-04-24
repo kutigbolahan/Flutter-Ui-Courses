@@ -23,6 +23,15 @@ class MyApp extends StatelessWidget {
       //   maxWidth:1200,
       //   minWidth:450,
       //   defaultScale: true,
+      //   breakpoints: [
+      //     ResponsiveBreakpoint(breakpoint: 450, name: MOBILE),
+      //     ResponsiveBreakpoint(
+      //           breakpoint: 800, name: TABLET, autoScale: true),
+      //       ResponsiveBreakpoint(
+      //           breakpoint: 1000, name: TABLET, autoScale: true),
+      //       ResponsiveBreakpoint(breakpoint: 1200, name: DESKTOP),
+      //       ResponsiveBreakpoint(breakpoint: 2460, name: "4K", autoScale: true),
+      //   ]
       // ),
      debugShowCheckedModeBanner: false,
       theme: ThemeData(
